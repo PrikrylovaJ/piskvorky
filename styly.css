@@ -16,3 +16,20 @@ a {
   display: block;
   width: 100%;
 }
+
+.popis {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background-color: #283e50;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.nadpis {
+  margin: 0 0 20px 0;
+  font-family: 'Lobster', cursive;
+  font-size: 34px; 
+}
+
