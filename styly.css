@@ -1,6 +1,8 @@
 body {
   background: linear-gradient( #615dad ,  #ffc8da);
-}
+  
+  }
+
 
 .obsah {
   margin: 250px 500px 500px 500px;
@@ -14,8 +16,15 @@ img {
 
 a {
   display: block;
+  text-align: center;
   width: 100%;
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+  padding-top: 10px;
 }
+
 
 .popis {
   color: #fff;
@@ -32,4 +41,18 @@ a {
   font-family: 'Lobster', cursive;
   font-size: 34px; 
 }
+
+.tlacitka {
+  font-family: Arial, sans-serif;
+}
+
+
+.tlacitko1 {
+  background-color: #1fcca4;
+}
+
+.tlacitko2 {
+  background-color: #0197f6;
+}
+
 
