@@ -9,7 +9,7 @@ body {
 .obsah {
   margin: 230px auto;
   width: 100%;
-  max-width: 360px;
+  max-width: 364px;
 }
 
 img {
@@ -31,28 +31,30 @@ img {
 .nadpis {
   margin: 0 0 20px 0;
   font-family: 'Lobster', cursive;
-  font-size: 34px; 
+  font-size: 36px; 
   font-weight: normal;
 }
 
-a {
-  display: block;
-  text-align: center;
-  width: 100%;
-  height: 40px;
-  color: #fff;
-  text-decoration: none;
-  line-height: 1.5;
-  padding-top: 10px;
-}
-
 .tlacitka {
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
+.tlacitko1,
+.tlacitko2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 15px;
+}
 
 .tlacitko1 {
   background-color: #1fcca4;
+  border-bottom: 0.5px solid black;
 }
 
 .tlacitko2 {
