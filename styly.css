@@ -126,3 +126,34 @@ img {
   font-style: italic;
   font-family: Arial, sans-serif;
 } 
+
+@media(min-width: 800px) {
+  .pravidla {
+    max-width: 680px;
+    margin: 30px auto;
+  }
+
+  .obsah-pravidla {
+    font-size: 17px;
+  }
+
+  .galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .foto {
+    width: 100%;
+    max-width: 290px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .text {
+    max-width: 290px;
+    font-size: 12px;
+  } 
+}
