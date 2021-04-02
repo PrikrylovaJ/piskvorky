@@ -68,3 +68,9 @@ img {
 .tlacitko2:hover {
   background-color:  #0090e9;
 }
+
+.pravidla {
+  margin: 30px auto;
+  max-width: 320px;
+  width: 100%;
+}
