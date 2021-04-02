@@ -36,10 +36,11 @@ img {
 }
 
 .nadpis {
-  margin: 0 0 20px 0;
+  margin: 20px 0 30px 0;
   font-family: 'Lobster', cursive;
-  font-size: 36px; 
+  font-size: 38px; 
   font-weight: normal;
+  text-align: center;
 }
 
 .tlacitka {
@@ -116,3 +117,12 @@ img {
   filter: invert(100%);
   display:inline-block;
 }
+
+.text {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-size: 13.5px;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+} 
