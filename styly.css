@@ -154,6 +154,12 @@ img {
 
   .text {
     max-width: 290px;
-    font-size: 12px;
+    font-size: 13px;
   } 
+}
+
+@media(min-width: 1000px) {
+  .obsah2 {
+    max-width: 680px;
+  }
 }
