@@ -163,3 +163,44 @@ img {
     max-width: 680px;
   }
 }
+
+/* ---------------------Hra------------------------- */
+
+.obsah-hra {
+  margin: 180px auto;
+  max-width: 80vmin;
+}
+
+.nadpis-hra {
+  font-family: 'Lobster', cursive;
+  font-size: 38px; 
+  font-weight: normal;
+  text-align: center;
+}
+
+.menu-hra {
+  display:flex;
+  justify-content: space-between;
+  
+}
+
+.obrazky-hra {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table-hra {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vmin;
+  margin: 180px auto;
+}
+
+.btn {
+  width: 10%;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid black;
+  background: #b3b2d5;
+  border-radius: 0;
+}
