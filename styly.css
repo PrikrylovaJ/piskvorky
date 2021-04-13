@@ -169,11 +169,13 @@ img {
 .obsah-hra {
   margin: 180px auto;
   max-width: 80vmin;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .nadpis-hra {
   font-family: 'Lobster', cursive;
-  font-size: 38px; 
+  font-size: 50px; 
   font-weight: normal;
   text-align: center;
 }
@@ -181,12 +183,40 @@ img {
 .menu-hra {
   display:flex;
   justify-content: space-between;
-  
 }
 
-.obrazky-hra {
+.menu-hra-left {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding-top: 10px;
+}
+
+.icon-left {
+  width: 1rem;
+  height: 1rem;
+  filter: invert(100%);
+  display:inline-block;
+  margin-left: 5px;
+}
+
+.menu-hra-right {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+} 
+
+.menu-icons-1 {
+    background-color:  #1cbb96;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.menu-icons-2 {
+    background-color: #0197f6;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .table-hra {
@@ -194,6 +224,7 @@ img {
   flex-wrap: wrap;
   max-width: 80vmin;
   margin: 180px auto;
+  margin-top: 10px;
 }
 
 .btn {
@@ -203,4 +234,8 @@ img {
   border: 1px solid black;
   background: #b3b2d5;
   border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #b9b8da;
 }
