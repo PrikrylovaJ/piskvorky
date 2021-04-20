@@ -11,10 +11,11 @@ html {
 
 body {
   background: linear-gradient( #615dad ,  #ffc8da);
+  min-height: 100vh
 }
 
 .obsah {
-  margin: 180px auto;
+  margin: 30px auto;
   width: 100%;
   max-width: 364px;
 }
@@ -167,7 +168,7 @@ img {
 /* ---------------------Hra------------------------- */
 
 .obsah-hra {
-  margin: 100px auto;
+  margin: 50px auto;
   max-width: 80vmin;
   color: white;
 }
