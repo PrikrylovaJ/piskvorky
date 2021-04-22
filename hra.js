@@ -5,21 +5,21 @@ let btnElements = document.querySelectorAll('.btn');
 const iconElm = document.querySelector('.icon-left');
 
 const hra = (event) => {
-  if (kdoJeNaTahu === 'circle') {
+  if (event.target.innerHTML !== `<img src="images/circle.svg">` && event.target.innerHTML !== `<img src="images/cross.svg">`) {
+    if (kdoJeNaTahu === 'circle') {
     event.target.classList.add('board__field--circle');
-    event.target.textContent = 'O';
-    event.target.style.fontSize = '200%';
+    event.target.innerHTML = `<img src="images/circle.svg">`;
     kdoJeNaTahu = 'cross';
     iconElm.src = 'images/cross.svg';
     } else if (kdoJeNaTahu === 'cross') {
     event.target.classList.add('board__field--cross');
-    event.target.textContent = 'X';
-    event.target.style.fontSize = '200%';
+    event.target.innerHTML = `<img src="images/cross.svg">`;
     kdoJeNaTahu = 'circle';
     iconElm.src = 'images/circle.svg';
     } else {
     event.target.style.display ='none';
   } 
+}
 }
 
 for (let i = 0; i < btnElements.length; i++) {
