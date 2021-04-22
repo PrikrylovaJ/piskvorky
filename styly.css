@@ -259,7 +259,6 @@ img {
 
 .btn:hover,
 .btn:focus {
-  background: linear-gradient(#8581b9, #f3d9e2) fixed;
   cursor: pointer;
 }
 
@@ -268,6 +267,8 @@ img {
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: center;
+  animation: example;
+  animation-duration: 0.15s;
 }
 
 .board__field--cross {
@@ -275,5 +276,19 @@ img {
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: center;
+  animation: example;
+  animation-duration: 0.15s;
 }
+
+
+@keyframes example {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 65%;
+  }
+}
+
+
 
