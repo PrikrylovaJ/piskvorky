@@ -263,3 +263,17 @@ img {
   cursor: pointer;
 }
 
+.board__field--circle {
+  background-image: url(images/circle.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.board__field--cross {
+  background-image: url(images/cross.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
