@@ -263,6 +263,8 @@ img {
   cursor: pointer;
 }
 
+.board__field--circle,
+.board__field--circle:focus,
 .board__field--circle:hover {
   background-image: url(images/circle.svg);
   background-attachment: initial; 
@@ -273,9 +275,11 @@ img {
   animation-duration: 0.15s;
 }
 
+.board__field--cross,
+.board__field--cross:focus,
 .board__field--cross:hover {
   background-image: url(images/cross.svg);
-   background-attachment: initial; 
+  background-attachment: initial; 
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: center;
@@ -292,9 +296,4 @@ img {
     background-size: 65%;
   }
 }
-/* 
-.board__field--circle:hover,
-.board__field--cross:hover {
-  background: linear-gradient(#8581b9, #f3d9e2) fixed;
-  cursor: pointer;
-} */
+
