@@ -19,16 +19,20 @@ const hra = (event) => {
     event.target.style.display ='none';
   } 
 
-  const win = isWinningMove(event.target);
-  if (win === true) {
-    if (kdoJeNaTahu === 'cross') {
+	const win = isWinningMove(event.target);
+
+		if (win === true) {
+		setTimeout = (() => {
+     if (kdoJeNaTahu === 'cross') {
       confirm('Vyhrává kolečko. Spustit novou hru?');
 			location.reload();
     } else {
       confirm('Vyhrává křížek. Spustit novou hru?');
 			location.reload();
-    }
+    } 
+		}, 5000);
   }
+
 
   // console.log(getSymbol(btnElements[1]));
   // console.log(getPosition(btnElements[2]));
