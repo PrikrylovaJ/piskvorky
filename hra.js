@@ -22,7 +22,7 @@ const hra = (event) => {
 	const win = isWinningMove(event.target);
 
 		if (win === true) {
-		setTimeout = (() => {
+		setTimeout(() => {
      if (kdoJeNaTahu === 'cross') {
       confirm('Vyhrává kolečko. Spustit novou hru?');
 			location.reload();
@@ -30,7 +30,7 @@ const hra = (event) => {
       confirm('Vyhrává křížek. Spustit novou hru?');
 			location.reload();
     } 
-		}, 5000);
+		}, 500);
   }
 
 
