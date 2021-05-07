@@ -22,9 +22,11 @@ const hra = (event) => {
   const win = isWinningMove(event.target);
   if (win === true) {
     if (kdoJeNaTahu === 'cross') {
-      alert('Hráč kolečko vyhrál');
+      confirm('Vyhrává kolečko. Spustit novou hru?');
+			location.reload();
     } else {
-      alert(`Hráč křížek výhral`);
+      confirm('Vyhrává křížek. Spustit novou hru?');
+			location.reload();
     }
   }
 
