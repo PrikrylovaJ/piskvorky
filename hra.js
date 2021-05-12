@@ -79,6 +79,7 @@ const isWinningMove = (field) => {
 	const symbol = getSymbol(field)
 
 	let i
+	let y
 
 	let inRow = 1 
 	i = origin.column 
@@ -121,6 +122,60 @@ const isWinningMove = (field) => {
 	if (inColumn >= symbolsToWin) {
 		return true
 	}
+
+  // ---------------------diagonal---------------------
+
+  let r
+	let leftToBottomRight = 1
+	 
+	 // vlevo nahoru
+	i = origin.column
+	r = origin.row
+  while (i > 0 && r > 0 && symbol === getSymbol(getField( r - 1, i - 1))) {
+    leftToBottomRight++
+		i--
+		r--
+	}	
+  
+  // vpravo dolu
+	i = origin.column
+	r = origin.row
+  while ( i < boardSize - 1 && r < boardSize - 1 && symbol === getSymbol(getField(r + 1, i + 1))
+	) {
+		leftToBottomRight++
+		i++
+		r++
+	}
+
+	if (leftToBottomRight >= symbolsToWin) {
+		return true
+	}
+
+
+  let rightToBottomLeft = 1 
+
+  //vlevo dolu
+	i = origin.column
+  r = origin.row
+  while (i > 0 && r < boardSize -1 && symbol === getSymbol(getField(r + 1 , i - 1))) {
+		rightToBottomLeft++
+		i--
+		r++
+	}
+
+  //vpravo hore
+	i = origin.column
+	r = origin.row
+	while (i < boardSize - 1 && r > 0 && symbol === getSymbol(getField( r - 1, i + 1))) {
+		rightToBottomLeft++
+		i++
+		r--
+	}
+
+	if (rightToBottomLeft >= symbolsToWin) {
+		return true
+	}
+
 
 	return false
 }
